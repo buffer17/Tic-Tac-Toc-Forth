@@ -26,10 +26,6 @@ cr
 .sd_n
 ;
 
-: ?occ
-
-;
-
 : fill_plot
 	swap 1- dup i_ @
 	0= IF i_ c!
@@ -38,9 +34,9 @@ cr
 	plot_out ;
 
 
-: X ( ход -- )
+: X ( ГµГ®Г¤ -- )
 	1 fill_plot ;
-: O ( ход -- )
+: O ( ГµГ®Г¤ -- )
 	-1 fill_plot ;
 
 : start_xo plot_out ;
